@@ -1,0 +1,387 @@
+2025-03-09 10:06:38,184 - root - INFO - Running ingest.py v1.0.1
+2025-03-09 10:06:38,184 - root - INFO - Log file: /Users/sukanyadatta/bm_code/privategpt2/docs_ingest.log
+2025-03-09 10:06:38,184 - root - DEBUG - Processing documents from: /Users/sukanyadatta/bm_code/privategpt2/documents
+2025-03-09 10:06:38,184 - root - DEBUG - Storing results in: /Users/sukanyadatta/bm_code/privategpt2/db
+2025-03-09 10:06:38,184 - root - DEBUG - Using chunk size: 500 and overlap: 50
+2025-03-09 10:06:38,184 - root - DEBUG - Document dir: /Users/sukanyadatta/bm_code/privategpt2/documents
+2025-03-09 10:06:38,184 - root - DEBUG - Put your document files to /Users/sukanyadatta/bm_code/privategpt2/documents
+
+2025-03-09 10:06:38,184 - root - DEBUG - Embeddings model name all-MiniLM-L6-v2
+2025-03-09 10:06:58,405 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2025-03-09 10:06:58,405 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-03-09 10:06:58,406 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-03-09 10:06:58,724 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json HTTP/1.1" 200 0
+2025-03-09 10:06:58,850 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json HTTP/1.1" 200 0
+2025-03-09 10:06:58,981 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/README.md HTTP/1.1" 200 0
+2025-03-09 10:06:59,100 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json HTTP/1.1" 200 0
+2025-03-09 10:06:59,215 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/sentence_bert_config.json HTTP/1.1" 200 0
+2025-03-09 10:06:59,340 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/adapter_config.json HTTP/1.1" 404 0
+2025-03-09 10:06:59,458 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json HTTP/1.1" 200 0
+2025-03-09 10:06:59,670 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json HTTP/1.1" 200 0
+2025-03-09 10:06:59,828 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/sentence-transformers/all-MiniLM-L6-v2/revision/main HTTP/1.1" 200 6756
+2025-03-09 10:07:00,041 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/sentence-transformers/all-MiniLM-L6-v2 HTTP/1.1" 200 6756
+2025-03-09 10:07:00,215 - root - INFO - persistent directory: /Users/sukanyadatta/bm_code/privategpt2/db
+2025-03-09 10:07:00,215 - root - INFO - Creating new vectorstore
+2025-03-09 10:07:00,215 - root - INFO - Loading documents from /Users/sukanyadatta/bm_code/privategpt2/documents
+2025-03-09 10:07:03,480 - root - INFO - Loaded 550 new documents from /Users/sukanyadatta/bm_code/privategpt2/documents
+2025-03-09 10:07:03,500 - root - INFO - Split into 2103 chunks of text (max. 500 tokens each)
+2025-03-09 10:07:03,501 - root - INFO - Creating embeddings. It may take few minutes...
+2025-03-09 10:07:03,508 - urllib3.util.retry - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-03-09 10:07:03,724 - chromadb.config - DEBUG - Starting component System
+2025-03-09 10:07:03,724 - chromadb.config - DEBUG - Starting component Posthog
+2025-03-09 10:07:03,724 - chromadb.config - DEBUG - Starting component OpenTelemetryClient
+2025-03-09 10:07:03,724 - chromadb.config - DEBUG - Starting component SqliteDB
+2025-03-09 10:07:03,737 - chromadb.config - DEBUG - Starting component SimpleQuotaEnforcer
+2025-03-09 10:07:03,737 - chromadb.config - DEBUG - Starting component SimpleRateLimitEnforcer
+2025-03-09 10:07:03,738 - chromadb.config - DEBUG - Starting component LocalSegmentManager
+2025-03-09 10:07:03,738 - chromadb.config - DEBUG - Starting component LocalExecutor
+2025-03-09 10:07:03,738 - chromadb.config - DEBUG - Starting component SegmentAPI
+2025-03-09 10:07:09,290 - chromadb.config - DEBUG - Starting component PersistentLocalHnswSegment
+2025-03-09 10:07:10,410 - root - INFO - Ingestion complete!
+2025-03-09 10:07:10,410 - root - INFO - Now you can run ./run_assistant_ui.sh to start the web ui
+2025-03-09 10:07:10,410 - root - INFO -  ./run_assistant.ui.sh -h for more info
+2025-03-09 10:10:43,219 - root - INFO - Running ingest.py v1.0.1
+2025-03-09 10:10:43,219 - root - INFO - Log file: /Users/sukanyadatta/bm_code/privategpt2/docs_ingest.log
+2025-03-09 10:10:43,219 - root - DEBUG - Processing documents from: /Users/sukanyadatta/bm_code/privategpt2/documents
+2025-03-09 10:10:43,219 - root - DEBUG - Storing results in: /Users/sukanyadatta/bm_code/privategpt2/db
+2025-03-09 10:10:43,219 - root - DEBUG - Using chunk size: 500 and overlap: 50
+2025-03-09 10:10:43,219 - root - DEBUG - Document dir: /Users/sukanyadatta/bm_code/privategpt2/documents
+2025-03-09 10:10:43,219 - root - DEBUG - Put your document files to /Users/sukanyadatta/bm_code/privategpt2/documents
+
+2025-03-09 10:10:43,219 - root - DEBUG - Embeddings model name all-MiniLM-L6-v2
+2025-03-09 10:10:44,361 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2025-03-09 10:10:44,361 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-03-09 10:10:44,362 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-03-09 10:10:44,699 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json HTTP/1.1" 200 0
+2025-03-09 10:10:44,825 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json HTTP/1.1" 200 0
+2025-03-09 10:10:44,945 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/README.md HTTP/1.1" 200 0
+2025-03-09 10:10:45,076 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json HTTP/1.1" 200 0
+2025-03-09 10:10:45,196 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/sentence_bert_config.json HTTP/1.1" 200 0
+2025-03-09 10:10:45,315 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/adapter_config.json HTTP/1.1" 404 0
+2025-03-09 10:10:45,544 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json HTTP/1.1" 200 0
+2025-03-09 10:10:45,735 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json HTTP/1.1" 200 0
+2025-03-09 10:10:45,906 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/sentence-transformers/all-MiniLM-L6-v2/revision/main HTTP/1.1" 200 6756
+2025-03-09 10:10:46,062 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/sentence-transformers/all-MiniLM-L6-v2 HTTP/1.1" 200 6756
+2025-03-09 10:10:46,172 - root - INFO - persistent directory: /Users/sukanyadatta/bm_code/privategpt2/db
+2025-03-09 10:10:46,173 - root - INFO - Appending to existing vectorstore at /Users/sukanyadatta/bm_code/privategpt2/db
+2025-03-09 10:10:46,178 - urllib3.util.retry - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-03-09 10:10:46,237 - chromadb.config - DEBUG - Starting component System
+2025-03-09 10:10:46,237 - chromadb.config - DEBUG - Starting component Posthog
+2025-03-09 10:10:46,237 - chromadb.config - DEBUG - Starting component OpenTelemetryClient
+2025-03-09 10:10:46,237 - chromadb.config - DEBUG - Starting component SqliteDB
+2025-03-09 10:10:46,238 - chromadb.config - DEBUG - Starting component SimpleQuotaEnforcer
+2025-03-09 10:10:46,238 - chromadb.config - DEBUG - Starting component SimpleRateLimitEnforcer
+2025-03-09 10:10:46,238 - chromadb.config - DEBUG - Starting component LocalSegmentManager
+2025-03-09 10:10:46,238 - chromadb.config - DEBUG - Starting component LocalExecutor
+2025-03-09 10:10:46,238 - chromadb.config - DEBUG - Starting component SegmentAPI
+2025-03-09 10:10:46,241 - chromadb.api.segment - DEBUG - Collection langchain already exists, returning existing collection.
+2025-03-09 10:10:46,279 - root - INFO - Loading documents from /Users/sukanyadatta/bm_code/privategpt2/documents
+2025-03-09 10:10:48,826 - root - INFO - Loaded 189 new documents from /Users/sukanyadatta/bm_code/privategpt2/documents
+2025-03-09 10:10:48,843 - root - INFO - Split into 1422 chunks of text (max. 500 tokens each)
+2025-03-09 10:10:48,843 - root - INFO - Creating embeddings. It May take few minutes...
+2025-03-09 10:10:48,846 - chromadb.api.segment - DEBUG - Collection langchain already exists, returning existing collection.
+2025-03-09 10:10:54,988 - chromadb.config - DEBUG - Starting component PersistentLocalHnswSegment
+2025-03-09 10:10:55,642 - root - INFO - Ingestion complete!
+2025-03-09 10:10:55,642 - root - INFO - Now you can run ./run_assistant_ui.sh to start the web ui
+2025-03-09 10:10:55,642 - root - INFO -  ./run_assistant.ui.sh -h for more info
+2025-03-09 10:24:06,784 - root - INFO - Running ingest.py v1.0.1
+2025-03-09 10:24:06,784 - root - INFO - Log file: /Users/sukanyadatta/bm_code/privategpt2/docs_ingest.log
+2025-03-09 10:24:06,784 - root - DEBUG - Processing documents from: /Users/sukanyadatta/bm_code/privategpt2/documents
+2025-03-09 10:24:06,784 - root - DEBUG - Storing results in: /Users/sukanyadatta/bm_code/privategpt2/db
+2025-03-09 10:24:06,784 - root - DEBUG - Using chunk size: 500 and overlap: 50
+2025-03-09 10:24:06,784 - root - DEBUG - Document dir: /Users/sukanyadatta/bm_code/privategpt2/documents
+2025-03-09 10:24:06,784 - root - DEBUG - Put your document files to /Users/sukanyadatta/bm_code/privategpt2/documents
+
+2025-03-09 10:24:06,784 - root - DEBUG - Embeddings model name all-MiniLM-L6-v2
+2025-03-09 10:24:08,365 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2025-03-09 10:24:08,365 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-03-09 10:24:08,366 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-03-09 10:24:08,711 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json HTTP/1.1" 200 0
+2025-03-09 10:24:08,905 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json HTTP/1.1" 200 0
+2025-03-09 10:24:09,032 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/README.md HTTP/1.1" 200 0
+2025-03-09 10:24:09,146 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json HTTP/1.1" 200 0
+2025-03-09 10:24:09,275 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/sentence_bert_config.json HTTP/1.1" 200 0
+2025-03-09 10:24:09,402 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/adapter_config.json HTTP/1.1" 404 0
+2025-03-09 10:24:09,527 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json HTTP/1.1" 200 0
+2025-03-09 10:24:09,766 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json HTTP/1.1" 200 0
+2025-03-09 10:24:09,925 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/sentence-transformers/all-MiniLM-L6-v2/revision/main HTTP/1.1" 200 6756
+2025-03-09 10:24:10,071 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/sentence-transformers/all-MiniLM-L6-v2 HTTP/1.1" 200 6756
+2025-03-09 10:24:10,240 - root - INFO - persistent directory: /Users/sukanyadatta/bm_code/privategpt2/db
+2025-03-09 10:24:10,240 - root - INFO - Appending to existing vectorstore at /Users/sukanyadatta/bm_code/privategpt2/db
+2025-03-09 10:24:10,248 - urllib3.util.retry - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-03-09 10:24:10,313 - chromadb.config - DEBUG - Starting component System
+2025-03-09 10:24:10,313 - chromadb.config - DEBUG - Starting component Posthog
+2025-03-09 10:24:10,313 - chromadb.config - DEBUG - Starting component OpenTelemetryClient
+2025-03-09 10:24:10,313 - chromadb.config - DEBUG - Starting component SqliteDB
+2025-03-09 10:24:10,315 - chromadb.config - DEBUG - Starting component SimpleQuotaEnforcer
+2025-03-09 10:24:10,315 - chromadb.config - DEBUG - Starting component SimpleRateLimitEnforcer
+2025-03-09 10:24:10,315 - chromadb.config - DEBUG - Starting component LocalSegmentManager
+2025-03-09 10:24:10,315 - chromadb.config - DEBUG - Starting component LocalExecutor
+2025-03-09 10:24:10,315 - chromadb.config - DEBUG - Starting component SegmentAPI
+2025-03-09 10:24:10,318 - chromadb.api.segment - DEBUG - Collection langchain already exists, returning existing collection.
+2025-03-09 10:24:10,420 - root - INFO - Loading documents from /Users/sukanyadatta/bm_code/privategpt2/documents
+2025-03-09 10:24:10,443 - root - INFO - No new documents to load
+2025-03-09 15:15:44,849 - root - INFO - Running ingest.py v1.0.1
+2025-03-09 15:15:44,849 - root - INFO - Log file: /Users/sukanyadatta/bm_code/privategpt2/docs_ingest.log
+2025-03-09 15:15:44,849 - root - DEBUG - Processing documents from: /Users/sukanyadatta/bm_code/privategpt2/documents
+2025-03-09 15:15:44,849 - root - DEBUG - Storing results in: /Users/sukanyadatta/bm_code/privategpt2/db
+2025-03-09 15:15:44,849 - root - DEBUG - Using chunk size: 500 and overlap: 50
+2025-03-09 15:15:44,849 - root - DEBUG - Document dir: /Users/sukanyadatta/bm_code/privategpt2/documents
+2025-03-09 15:15:44,849 - root - DEBUG - Put your document files to /Users/sukanyadatta/bm_code/privategpt2/documents
+
+2025-03-09 15:15:44,849 - root - DEBUG - Embeddings model name all-MiniLM-L6-v2
+2025-03-09 15:15:45,851 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2025-03-09 15:15:45,852 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-03-09 15:15:45,853 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-03-09 15:15:46,270 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json HTTP/1.1" 200 0
+2025-03-09 15:15:47,898 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json HTTP/1.1" 200 0
+2025-03-09 15:15:48,026 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/README.md HTTP/1.1" 200 0
+2025-03-09 15:15:48,148 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json HTTP/1.1" 200 0
+2025-03-09 15:15:48,289 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/sentence_bert_config.json HTTP/1.1" 200 0
+2025-03-09 15:15:48,445 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/adapter_config.json HTTP/1.1" 404 0
+2025-03-09 15:15:48,570 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json HTTP/1.1" 200 0
+2025-03-09 15:15:48,763 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json HTTP/1.1" 200 0
+2025-03-09 15:15:48,943 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/sentence-transformers/all-MiniLM-L6-v2/revision/main HTTP/1.1" 200 6756
+2025-03-09 15:15:49,121 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/sentence-transformers/all-MiniLM-L6-v2 HTTP/1.1" 200 6756
+2025-03-09 15:15:49,233 - root - INFO - persistent directory: /Users/sukanyadatta/bm_code/privategpt2/db
+2025-03-09 15:15:49,233 - root - INFO - Appending to existing vectorstore at /Users/sukanyadatta/bm_code/privategpt2/db
+2025-03-09 15:15:49,240 - urllib3.util.retry - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-03-09 15:15:49,299 - chromadb.config - DEBUG - Starting component System
+2025-03-09 15:15:49,299 - chromadb.config - DEBUG - Starting component Posthog
+2025-03-09 15:15:49,299 - chromadb.config - DEBUG - Starting component OpenTelemetryClient
+2025-03-09 15:15:49,299 - chromadb.config - DEBUG - Starting component SqliteDB
+2025-03-09 15:15:49,301 - chromadb.config - DEBUG - Starting component SimpleQuotaEnforcer
+2025-03-09 15:15:49,301 - chromadb.config - DEBUG - Starting component SimpleRateLimitEnforcer
+2025-03-09 15:15:49,301 - chromadb.config - DEBUG - Starting component LocalSegmentManager
+2025-03-09 15:15:49,301 - chromadb.config - DEBUG - Starting component LocalExecutor
+2025-03-09 15:15:49,301 - chromadb.config - DEBUG - Starting component SegmentAPI
+2025-03-09 15:15:49,304 - chromadb.api.segment - DEBUG - Collection langchain already exists, returning existing collection.
+2025-03-09 15:15:49,401 - root - INFO - Loading documents from /Users/sukanyadatta/bm_code/privategpt2/documents
+2025-03-09 15:15:49,442 - root - INFO - No new documents to load
+2025-03-11 20:10:12,988 - root - INFO - Running ingest.py v1.0.1
+2025-03-11 20:10:12,988 - root - INFO - Log file: /Users/sukanyadatta/bm_code/privategpt2/docs_ingest.log
+2025-03-11 20:10:12,988 - root - DEBUG - Processing documents from: /Users/sukanyadatta/bm_code/privategpt2/documents
+2025-03-11 20:10:12,988 - root - DEBUG - Storing results in: /Users/sukanyadatta/bm_code/privategpt2/db
+2025-03-11 20:10:12,988 - root - DEBUG - Using chunk size: 500 and overlap: 50
+2025-03-11 20:10:12,988 - root - DEBUG - Document dir: /Users/sukanyadatta/bm_code/privategpt2/documents
+2025-03-11 20:10:12,988 - root - DEBUG - Put your document files to /Users/sukanyadatta/bm_code/privategpt2/documents
+
+2025-03-11 20:10:12,988 - root - DEBUG - Embeddings model name all-MiniLM-L6-v2
+2025-03-11 20:10:17,971 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2025-03-11 20:10:17,972 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-03-11 20:10:17,973 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-03-11 20:10:18,270 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json HTTP/1.1" 200 0
+2025-03-11 20:10:18,396 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json HTTP/1.1" 200 0
+2025-03-11 20:10:18,516 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/README.md HTTP/1.1" 200 0
+2025-03-11 20:10:18,685 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json HTTP/1.1" 200 0
+2025-03-11 20:10:18,806 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/sentence_bert_config.json HTTP/1.1" 200 0
+2025-03-11 20:10:18,939 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/adapter_config.json HTTP/1.1" 404 0
+2025-03-11 20:10:19,053 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json HTTP/1.1" 200 0
+2025-03-11 20:10:19,288 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json HTTP/1.1" 200 0
+2025-03-11 20:10:19,446 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/sentence-transformers/all-MiniLM-L6-v2/revision/main HTTP/1.1" 200 6756
+2025-03-11 20:10:19,620 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/sentence-transformers/all-MiniLM-L6-v2 HTTP/1.1" 200 6756
+2025-03-11 20:10:19,877 - root - INFO - persistent directory: /Users/sukanyadatta/bm_code/privategpt2/db
+2025-03-11 20:10:19,877 - root - INFO - Appending to existing vectorstore at /Users/sukanyadatta/bm_code/privategpt2/db
+2025-03-11 20:10:19,885 - urllib3.util.retry - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-03-11 20:10:20,013 - chromadb.config - DEBUG - Starting component System
+2025-03-11 20:10:20,013 - chromadb.config - DEBUG - Starting component Posthog
+2025-03-11 20:10:20,013 - chromadb.config - DEBUG - Starting component OpenTelemetryClient
+2025-03-11 20:10:20,013 - chromadb.config - DEBUG - Starting component SqliteDB
+2025-03-11 20:10:20,016 - chromadb.config - DEBUG - Starting component SimpleQuotaEnforcer
+2025-03-11 20:10:20,016 - chromadb.config - DEBUG - Starting component SimpleRateLimitEnforcer
+2025-03-11 20:10:20,016 - chromadb.config - DEBUG - Starting component LocalSegmentManager
+2025-03-11 20:10:20,016 - chromadb.config - DEBUG - Starting component LocalExecutor
+2025-03-11 20:10:20,016 - chromadb.config - DEBUG - Starting component SegmentAPI
+2025-03-11 20:10:20,021 - chromadb.api.segment - DEBUG - Collection langchain already exists, returning existing collection.
+2025-03-11 20:10:20,133 - root - INFO - Loading documents from /Users/sukanyadatta/bm_code/privategpt2/documents
+2025-03-11 20:10:20,169 - root - INFO - No new documents to load
+2025-03-11 20:21:40,503 - root - INFO - Running ingest.py v1.0.1
+2025-03-11 20:21:40,504 - root - INFO - Log file: /Users/sukanyadatta/bm_code/privategpt2/docs_ingest.log
+2025-03-11 20:21:40,504 - root - DEBUG - Processing documents from: /Users/sukanyadatta/bm_code/privategpt2/documents
+2025-03-11 20:21:40,504 - root - DEBUG - Storing results in: /Users/sukanyadatta/bm_code/privategpt2/db
+2025-03-11 20:21:40,504 - root - DEBUG - Using chunk size: 500 and overlap: 50
+2025-03-11 20:21:40,504 - root - DEBUG - Document dir: /Users/sukanyadatta/bm_code/privategpt2/documents
+2025-03-11 20:21:40,504 - root - DEBUG - Put your document files to /Users/sukanyadatta/bm_code/privategpt2/documents
+
+2025-03-11 20:21:40,504 - root - DEBUG - Embeddings model name all-MiniLM-L6-v2
+2025-03-11 20:21:41,566 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2025-03-11 20:21:41,566 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-03-11 20:21:41,567 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-03-11 20:21:41,887 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json HTTP/1.1" 200 0
+2025-03-11 20:21:42,008 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json HTTP/1.1" 200 0
+2025-03-11 20:21:42,488 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/README.md HTTP/1.1" 200 0
+2025-03-11 20:21:42,608 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json HTTP/1.1" 200 0
+2025-03-11 20:21:48,120 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/sentence_bert_config.json HTTP/1.1" 200 0
+2025-03-11 20:21:48,251 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/adapter_config.json HTTP/1.1" 404 0
+2025-03-11 20:21:48,377 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json HTTP/1.1" 200 0
+2025-03-11 20:21:48,562 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json HTTP/1.1" 200 0
+2025-03-11 20:21:48,717 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/sentence-transformers/all-MiniLM-L6-v2/revision/main HTTP/1.1" 200 6756
+2025-03-11 20:21:49,147 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/sentence-transformers/all-MiniLM-L6-v2 HTTP/1.1" 200 6756
+2025-03-11 20:21:49,276 - root - INFO - persistent directory: /Users/sukanyadatta/bm_code/privategpt2/db
+2025-03-11 20:21:49,277 - root - INFO - Appending to existing vectorstore at /Users/sukanyadatta/bm_code/privategpt2/db
+2025-03-11 20:21:49,285 - urllib3.util.retry - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-03-11 20:21:49,356 - chromadb.config - DEBUG - Starting component System
+2025-03-11 20:21:49,357 - chromadb.config - DEBUG - Starting component Posthog
+2025-03-11 20:21:49,357 - chromadb.config - DEBUG - Starting component OpenTelemetryClient
+2025-03-11 20:21:49,357 - chromadb.config - DEBUG - Starting component SqliteDB
+2025-03-11 20:21:49,359 - chromadb.config - DEBUG - Starting component SimpleQuotaEnforcer
+2025-03-11 20:21:49,359 - chromadb.config - DEBUG - Starting component SimpleRateLimitEnforcer
+2025-03-11 20:21:49,359 - chromadb.config - DEBUG - Starting component LocalSegmentManager
+2025-03-11 20:21:49,359 - chromadb.config - DEBUG - Starting component LocalExecutor
+2025-03-11 20:21:49,359 - chromadb.config - DEBUG - Starting component SegmentAPI
+2025-03-11 20:21:49,364 - chromadb.api.segment - DEBUG - Collection langchain already exists, returning existing collection.
+2025-03-11 20:21:49,476 - root - INFO - Loading documents from /Users/sukanyadatta/bm_code/privategpt2/documents
+2025-03-11 20:21:49,531 - root - INFO - No new documents to load
+2025-03-12 09:28:30,814 - root - INFO - Running ingest.py v1.0.1
+2025-03-12 09:28:30,814 - root - INFO - Log file: /Users/sukanyadatta/bm_code/privategpt2/docs_ingest.log
+2025-03-12 09:28:30,814 - root - DEBUG - Processing documents from: /Users/sukanyadatta/bm_code/privategpt2/documents
+2025-03-12 09:28:30,814 - root - DEBUG - Storing results in: /Users/sukanyadatta/bm_code/privategpt2/db
+2025-03-12 09:28:30,814 - root - DEBUG - Using chunk size: 500 and overlap: 50
+2025-03-12 09:28:30,814 - root - DEBUG - Document dir: /Users/sukanyadatta/bm_code/privategpt2/documents
+2025-03-12 09:28:30,814 - root - DEBUG - Put your document files to /Users/sukanyadatta/bm_code/privategpt2/documents
+
+2025-03-12 09:28:30,814 - root - DEBUG - Embeddings model name all-MiniLM-L6-v2
+2025-03-12 09:28:33,141 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2025-03-12 09:28:33,141 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-03-12 09:28:33,142 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-03-12 09:28:33,544 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json HTTP/1.1" 200 0
+2025-03-12 09:28:33,669 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json HTTP/1.1" 200 0
+2025-03-12 09:28:34,016 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/README.md HTTP/1.1" 200 0
+2025-03-12 09:28:34,160 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json HTTP/1.1" 200 0
+2025-03-12 09:28:34,324 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/sentence_bert_config.json HTTP/1.1" 200 0
+2025-03-12 09:28:34,735 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/adapter_config.json HTTP/1.1" 404 0
+2025-03-12 09:28:34,875 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json HTTP/1.1" 200 0
+2025-03-12 09:28:35,119 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json HTTP/1.1" 200 0
+2025-03-12 09:28:35,553 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/sentence-transformers/all-MiniLM-L6-v2/revision/main HTTP/1.1" 200 6757
+2025-03-12 09:28:35,749 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/sentence-transformers/all-MiniLM-L6-v2 HTTP/1.1" 200 6757
+2025-03-12 09:28:36,003 - root - INFO - persistent directory: /Users/sukanyadatta/bm_code/privategpt2/db
+2025-03-12 09:28:36,004 - root - INFO - Appending to existing vectorstore at /Users/sukanyadatta/bm_code/privategpt2/db
+2025-03-12 09:28:36,011 - urllib3.util.retry - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-03-12 09:28:36,109 - chromadb.config - DEBUG - Starting component System
+2025-03-12 09:28:36,109 - chromadb.config - DEBUG - Starting component Posthog
+2025-03-12 09:28:36,109 - chromadb.config - DEBUG - Starting component OpenTelemetryClient
+2025-03-12 09:28:36,109 - chromadb.config - DEBUG - Starting component SqliteDB
+2025-03-12 09:28:36,111 - chromadb.config - DEBUG - Starting component SimpleQuotaEnforcer
+2025-03-12 09:28:36,111 - chromadb.config - DEBUG - Starting component SimpleRateLimitEnforcer
+2025-03-12 09:28:36,111 - chromadb.config - DEBUG - Starting component LocalSegmentManager
+2025-03-12 09:28:36,111 - chromadb.config - DEBUG - Starting component LocalExecutor
+2025-03-12 09:28:36,111 - chromadb.config - DEBUG - Starting component SegmentAPI
+2025-03-12 09:28:36,116 - chromadb.api.segment - DEBUG - Collection langchain already exists, returning existing collection.
+2025-03-12 09:28:36,218 - root - INFO - Loading documents from /Users/sukanyadatta/bm_code/privategpt2/documents
+2025-03-12 09:28:36,244 - root - INFO - No new documents to load
+2025-03-12 17:52:56,501 - root - INFO - Running ingest.py v1.0.1
+2025-03-12 17:52:56,502 - root - INFO - Log file: /Users/sukanyadatta/bm_code/privategpt2/docs_ingest.log
+2025-03-12 17:52:56,502 - root - DEBUG - Processing documents from: /Users/sukanyadatta/bm_code/privategpt2/documents
+2025-03-12 17:52:56,502 - root - DEBUG - Storing results in: /Users/sukanyadatta/bm_code/privategpt2/db
+2025-03-12 17:52:56,502 - root - DEBUG - Using chunk size: 1000 and overlap: 50
+2025-03-12 17:52:56,502 - root - DEBUG - Document dir: /Users/sukanyadatta/bm_code/privategpt2/documents
+2025-03-12 17:52:56,502 - root - DEBUG - Put your document files to /Users/sukanyadatta/bm_code/privategpt2/documents
+
+2025-03-12 17:52:56,502 - root - DEBUG - Embeddings model name all-MiniLM-L6-v2
+2025-03-12 17:52:58,166 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2025-03-12 17:52:58,166 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-03-12 17:52:58,167 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-03-12 17:52:58,474 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json HTTP/1.1" 200 0
+2025-03-12 17:52:58,617 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json HTTP/1.1" 200 0
+2025-03-12 17:52:58,724 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/README.md HTTP/1.1" 200 0
+2025-03-12 17:52:58,872 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json HTTP/1.1" 200 0
+2025-03-12 17:52:58,993 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/sentence_bert_config.json HTTP/1.1" 200 0
+2025-03-12 17:52:59,131 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/adapter_config.json HTTP/1.1" 404 0
+2025-03-12 17:52:59,249 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json HTTP/1.1" 200 0
+2025-03-12 17:52:59,487 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json HTTP/1.1" 200 0
+2025-03-12 17:52:59,633 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/sentence-transformers/all-MiniLM-L6-v2/revision/main HTTP/1.1" 200 6757
+2025-03-12 17:52:59,793 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/sentence-transformers/all-MiniLM-L6-v2 HTTP/1.1" 200 6757
+2025-03-12 17:52:59,964 - root - INFO - persistent directory: /Users/sukanyadatta/bm_code/privategpt2/db
+2025-03-12 17:52:59,964 - root - INFO - Creating new vectorstore
+2025-03-12 17:52:59,964 - root - INFO - Loading documents from /Users/sukanyadatta/bm_code/privategpt2/documents
+2025-03-12 17:53:02,536 - root - INFO - Loaded 189 new documents from /Users/sukanyadatta/bm_code/privategpt2/documents
+2025-03-12 17:53:02,550 - root - INFO - Split into 728 chunks of text (max. 1000 tokens each)
+2025-03-12 17:53:02,550 - root - INFO - Creating embeddings. It may take few minutes...
+2025-03-12 17:53:02,558 - urllib3.util.retry - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-03-12 17:53:02,625 - chromadb.config - DEBUG - Starting component System
+2025-03-12 17:53:02,625 - chromadb.config - DEBUG - Starting component Posthog
+2025-03-12 17:53:02,625 - chromadb.config - DEBUG - Starting component OpenTelemetryClient
+2025-03-12 17:53:02,625 - chromadb.config - DEBUG - Starting component SqliteDB
+2025-03-12 17:53:02,638 - chromadb.config - DEBUG - Starting component SimpleQuotaEnforcer
+2025-03-12 17:53:02,638 - chromadb.config - DEBUG - Starting component SimpleRateLimitEnforcer
+2025-03-12 17:53:02,638 - chromadb.config - DEBUG - Starting component LocalSegmentManager
+2025-03-12 17:53:02,638 - chromadb.config - DEBUG - Starting component LocalExecutor
+2025-03-12 17:53:02,638 - chromadb.config - DEBUG - Starting component SegmentAPI
+2025-03-12 17:53:06,149 - chromadb.config - DEBUG - Starting component PersistentLocalHnswSegment
+2025-03-12 17:53:06,494 - root - INFO - Ingestion complete!
+2025-03-12 17:53:06,494 - root - INFO - Now you can run ./run_assistant_ui.sh to start the web ui
+2025-03-12 17:53:06,494 - root - INFO -  ./run_assistant.ui.sh -h for more info
+2025-03-23 18:25:23,747 - root - INFO - Running ingest.py v1.0.1
+2025-03-23 18:25:23,748 - root - INFO - Log file: /Users/sukanyadatta/bm_code/privategpt2/docs_ingest.log
+2025-03-23 18:25:23,748 - root - DEBUG - Processing documents from: /Users/sukanyadatta/bm_code/privategpt2/documents
+2025-03-23 18:25:23,748 - root - DEBUG - Storing results in: /Users/sukanyadatta/bm_code/privategpt2/db
+2025-03-23 18:25:23,748 - root - DEBUG - Using chunk size: 1000 and overlap: 50
+2025-03-23 18:25:23,748 - root - DEBUG - Document dir: /Users/sukanyadatta/bm_code/privategpt2/documents
+2025-03-23 18:25:23,748 - root - DEBUG - Put your document files to /Users/sukanyadatta/bm_code/privategpt2/documents
+
+2025-03-23 18:25:23,748 - root - DEBUG - Embeddings model name all-MiniLM-L6-v2
+2025-03-23 18:25:53,357 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2025-03-23 18:25:53,357 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-03-23 18:25:53,358 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-03-23 18:25:53,904 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json HTTP/1.1" 200 0
+2025-03-23 18:25:54,131 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json HTTP/1.1" 200 0
+2025-03-23 18:25:54,300 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/README.md HTTP/1.1" 200 0
+2025-03-23 18:25:54,458 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json HTTP/1.1" 200 0
+2025-03-23 18:26:00,543 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/sentence_bert_config.json HTTP/1.1" 200 0
+2025-03-23 18:26:00,692 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/adapter_config.json HTTP/1.1" 404 0
+2025-03-23 18:26:00,878 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json HTTP/1.1" 200 0
+2025-03-23 18:26:01,131 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json HTTP/1.1" 200 0
+2025-03-23 18:26:01,300 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/sentence-transformers/all-MiniLM-L6-v2/revision/main HTTP/1.1" 200 6740
+2025-03-23 18:26:01,513 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/sentence-transformers/all-MiniLM-L6-v2 HTTP/1.1" 200 6740
+2025-03-23 18:26:01,686 - root - INFO - persistent directory: /Users/sukanyadatta/bm_code/privategpt2/db
+2025-03-23 18:26:01,687 - root - INFO - Appending to existing vectorstore at /Users/sukanyadatta/bm_code/privategpt2/db
+2025-03-23 18:26:01,694 - urllib3.util.retry - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-03-23 18:26:01,918 - chromadb.config - DEBUG - Starting component System
+2025-03-23 18:26:01,918 - chromadb.config - DEBUG - Starting component Posthog
+2025-03-23 18:26:01,918 - chromadb.config - DEBUG - Starting component OpenTelemetryClient
+2025-03-23 18:26:01,918 - chromadb.config - DEBUG - Starting component SqliteDB
+2025-03-23 18:26:01,920 - chromadb.config - DEBUG - Starting component SimpleQuotaEnforcer
+2025-03-23 18:26:01,920 - chromadb.config - DEBUG - Starting component SimpleRateLimitEnforcer
+2025-03-23 18:26:01,920 - chromadb.config - DEBUG - Starting component LocalSegmentManager
+2025-03-23 18:26:01,921 - chromadb.config - DEBUG - Starting component LocalExecutor
+2025-03-23 18:26:01,921 - chromadb.config - DEBUG - Starting component SegmentAPI
+2025-03-23 18:26:01,924 - chromadb.api.segment - DEBUG - Collection langchain already exists, returning existing collection.
+2025-03-23 18:26:01,958 - root - INFO - Loading documents from /Users/sukanyadatta/bm_code/privategpt2/documents
+2025-03-23 18:26:01,987 - root - INFO - No new documents to load
+2025-03-23 18:34:40,803 - root - INFO - Running ingest.py v1.0.1
+2025-03-23 18:34:40,803 - root - INFO - Log file: /Users/sukanyadatta/bm_code/privategpt2/docs_ingest.log
+2025-03-23 18:34:40,803 - root - DEBUG - Processing documents from: /Users/sukanyadatta/bm_code/privategpt2/documents
+2025-03-23 18:34:40,803 - root - DEBUG - Storing results in: /Users/sukanyadatta/bm_code/privategpt2/db
+2025-03-23 18:34:40,804 - root - DEBUG - Using chunk size: 1000 and overlap: 50
+2025-03-23 18:34:40,804 - root - DEBUG - Document dir: /Users/sukanyadatta/bm_code/privategpt2/documents
+2025-03-23 18:34:40,804 - root - DEBUG - Put your document files to /Users/sukanyadatta/bm_code/privategpt2/documents
+
+2025-03-23 18:34:40,804 - root - DEBUG - Embeddings model name all-MiniLM-L6-v2
+2025-03-23 18:34:42,097 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2025-03-23 18:34:42,097 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-03-23 18:34:42,099 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-03-23 18:34:42,457 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json HTTP/1.1" 200 0
+2025-03-23 18:34:42,583 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json HTTP/1.1" 200 0
+2025-03-23 18:34:42,742 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/README.md HTTP/1.1" 200 0
+2025-03-23 18:34:42,873 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json HTTP/1.1" 200 0
+2025-03-23 18:34:42,996 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/sentence_bert_config.json HTTP/1.1" 200 0
+2025-03-23 18:34:43,117 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/adapter_config.json HTTP/1.1" 404 0
+2025-03-23 18:34:43,242 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json HTTP/1.1" 200 0
+2025-03-23 18:34:43,468 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json HTTP/1.1" 200 0
+2025-03-23 18:34:43,626 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/sentence-transformers/all-MiniLM-L6-v2/revision/main HTTP/1.1" 200 6740
+2025-03-23 18:34:43,790 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/sentence-transformers/all-MiniLM-L6-v2 HTTP/1.1" 200 6740
+2025-03-23 18:34:43,983 - root - INFO - persistent directory: /Users/sukanyadatta/bm_code/privategpt2/db
+2025-03-23 18:34:43,984 - root - INFO - Appending to existing vectorstore at /Users/sukanyadatta/bm_code/privategpt2/db
+2025-03-23 18:34:43,991 - urllib3.util.retry - DEBUG - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2025-03-23 18:34:44,054 - chromadb.config - DEBUG - Starting component System
+2025-03-23 18:34:44,054 - chromadb.config - DEBUG - Starting component Posthog
+2025-03-23 18:34:44,054 - chromadb.config - DEBUG - Starting component OpenTelemetryClient
+2025-03-23 18:34:44,054 - chromadb.config - DEBUG - Starting component SqliteDB
+2025-03-23 18:34:44,056 - chromadb.config - DEBUG - Starting component SimpleQuotaEnforcer
+2025-03-23 18:34:44,056 - chromadb.config - DEBUG - Starting component SimpleRateLimitEnforcer
+2025-03-23 18:34:44,056 - chromadb.config - DEBUG - Starting component LocalSegmentManager
+2025-03-23 18:34:44,056 - chromadb.config - DEBUG - Starting component LocalExecutor
+2025-03-23 18:34:44,056 - chromadb.config - DEBUG - Starting component SegmentAPI
+2025-03-23 18:34:44,060 - chromadb.api.segment - DEBUG - Collection langchain already exists, returning existing collection.
+2025-03-23 18:34:44,090 - root - INFO - Loading documents from /Users/sukanyadatta/bm_code/privategpt2/documents
+2025-03-23 18:34:44,115 - root - INFO - No new documents to load
