@@ -38,7 +38,7 @@ In order to run this repository, do the following:
    python3 ./ingest/ingest.py
    
 6. Launch the user-interface app by running:
-   streamlit run ./assistant/assistant_ui.py
+   streamlit run ./assistant/pvtgpt_cfa_ui.py
 
 Please feel free to email me with any questions or glitches at baridhi.malakar@scheller.gatech.edu.
 
