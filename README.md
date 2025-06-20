@@ -1,5 +1,5 @@
-# NFMA Private GPT
-Create a private GPT for the National Federation of Municipal Analysts (NFMA).
+# Private GPT
+Create a private GPT that can be used to process and interact with documents locally.
 
 
 This project aims to create a private version of a GPT to chat with PDF documents.
@@ -40,7 +40,7 @@ In order to run this repository, do the following:
 6. Launch the user-interface app by running:
    streamlit run ./assistant/assistant_ui.py
 
-A quick demonstration of the application in action is linked here: https://youtu.be/IVAP2pDQHMg.
+Please feel free to email me with any questions or glitches at baridhi.malakar@scheller.gatech.edu.
 
 
 
