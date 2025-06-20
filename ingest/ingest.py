@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 #==================================================================== 
 # Create chromadb vector database from document files. The code is 
-# 23-Mar-2025 
+# 19-Jun-2025 
 #==================================================================== 
 """
 The code is based on:
@@ -10,6 +10,8 @@ https://github.com/ollama/ollama/tree/main/examples/langchain-python-rag-private
 import os
 import sys
 import glob
+import shutil # for directory ops
+import argparse # for command-line args
 from typing import List
 from multiprocessing import Pool
 from tqdm import tqdm
@@ -277,6 +279,10 @@ def create_or_update_db(texts, embeddings, persist_directory, initial_batch_size
     return db
 
 def main():
+    parser = argparse.ArgumentParser(description = "Ingest documents into ChromaDB.")
+    parser.add_argument("--clear", action="store_true", help="Clear the existing ChromaDB vector store before ingesting new documents.")
+    args = parser.parse_args()
+    
     conf = load_config()
     logger = setup_logging(conf.LOG_FILE_INGEST)
     logger.info(f"Running ingest.py v{INGEST_VERSION}")
@@ -304,6 +310,21 @@ def main():
     embeddings = HuggingFaceEmbeddings(model_name=conf.EMBEDDINGS_MODEL_NAME)
 
     logger.info(f"persistent directory: {conf.PERSIST_DIRECTORY}")
+
+    #-----------added logic to clear the database-------------------------
+    if args.clear:
+        if os.path.exists(persist_directory):
+            logger.info(f"Clearing existing vectorstore at {persist_directory} as --clear was specified.")
+            try:
+                shutil.rmtree(persist_directory)
+                logger.info("ChromaDB directory cleared successfully")
+            except OSError as e:
+                logger.error(f"Error clearing ChromaDB directory {persist_directory}:{e}")
+                sys.exit(1)
+
+        else:
+            logger.info(f"No existing vectorstore found at {persist_directory} to clear.")
+            
 
     if does_vectorstore_exist(conf.PERSIST_DIRECTORY):
         # Update and store locally vectorstore
