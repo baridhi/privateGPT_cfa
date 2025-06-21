@@ -8,13 +8,13 @@ current_file_path = os.path.abspath(__file__)
 PROJECT_ROOT = os.path.dirname(current_file_path)
 VERSION="1.0.1"
 
-APP_TITLE = "NFMA PrivateGPT"
-APP_DESCRIPTION = "Local tool to chat with a PDF offering statement"
-PROJECT_URL = "https://github.com/baridhi/nfma_privateGPT"
+APP_TITLE = "PrivateGPT"
+APP_DESCRIPTION = "Local tool to chat with documents"
+PROJECT_URL = "https://github.com/baridhi/privateGPT_cfa"
 
 SHOW_PROJECT_URL = False
 SHOW_SIDEBAR = True
-ASK_ME_TEXT = "Ask me anything about the Municipal Offering Statement"
+ASK_ME_TEXT = "Ask me anything about the document"
 
 # Default system prompt. Please look at Custom Prompts section
 # in README.md for examples
@@ -32,7 +32,6 @@ Question: {question}
 Answer: Let me analyze the context and provide a detailed response.
 """
 
-## No BS strict prompt
 ## LLMs like to talk too much, use strict prompt if you want
 #CUSTOM_PROMPT = """
 #Use the following context to answer the given question. Be direct and concise.
@@ -97,11 +96,12 @@ LOG_FILE_CHAT = os.path.join(PROJECT_ROOT, 'private_gpt.log')
 
 # default LLM  for console app. web app list the loaded models
 # dynamically
-DEFAULT_MODEL = "mistral"
+# DEFAULT_MODEL = "mistral" #first trial
+DEFAULT_MODEL = "deepseek-r1" #second trial
 
 # All the loaded models will be displayed on the sidebar. To exclude
 # any model, add in the list below, for example, there is no
 # reason to display an embedding model in the list for example.
-#EXCLUDE_MODELS = []
+# EXCLUDE_MODELS = []
 EXCLUDE_MODELS = ["nomic-embed-text:latest", "qwen2:7b"]
 
