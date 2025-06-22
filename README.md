@@ -40,6 +40,7 @@ In order to run this repository, do the following:
 6. Launch the user-interface app by running:
    streamlit run ./assistant/pvtgpt_cfa_ui.py
 
+This [supporting document](https://www.researchgate.net/publication/392914993_Building_a_Private_GPT-like_ChatBot_-An_Operational_Guide) provides more gudiance on this project and its potential use.
 Please feel free to email me with any questions or glitches at baridhi.malakar@scheller.gatech.edu.
 
 
