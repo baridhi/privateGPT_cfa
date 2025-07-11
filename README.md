@@ -42,7 +42,10 @@ In order to run this repository, do the following:
 
 This [supporting document](https://www.researchgate.net/publication/392914993_Building_a_Private_GPT-like_ChatBot_-An_Operational_Guide) provides more gudiance on this project and its potential use.
 Please feel free to email me with any questions or glitches at baridhi.malakar@scheller.gatech.edu. If you find this work (or guide) useful in your work, please use the following citation:
+
+<details>
 <summary><strong>📄 BibTeX Citation</strong></summary>
+
 ```bibtex
 @article{malakar2025gpt,
   title={Building a Private GPT-like ChatBot -An Operational Guide},
@@ -51,7 +54,7 @@ Please feel free to email me with any questions or glitches at baridhi.malakar@s
   number={10.13140/RG.2.2.33836.17285},
   year={2025}
 }
-```
+<details>```
 
 
 
