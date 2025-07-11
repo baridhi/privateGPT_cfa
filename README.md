@@ -54,7 +54,6 @@ Please feel free to email me with any questions or glitches at baridhi.malakar@s
   number={10.13140/RG.2.2.33836.17285},
   year={2025}
 }
-<details>```
 
 
 
