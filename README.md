@@ -1,5 +1,5 @@
 # Private GPT
-Create a private GPT that can be used to process and interact with documents locally. It is described in this [CFA Institute blog here] (https://blogs.cfainstitute.org/investor/2025/07/14/rethinking-research-private-gpts-for-investment-analysis/).
+Create a private GPT that can be used to process and interact with documents locally. It is described in this [CFA Institute blog here](https://blogs.cfainstitute.org/investor/2025/07/14/rethinking-research-private-gpts-for-investment-analysis/).
 
 
 This project aims to create a private version of a GPT to chat with PDF documents.
@@ -15,7 +15,7 @@ My current approach uses retrieval augmented generation (RAG) on top of open-sou
 More specifically, the system allows users to upload TXT or other documents, which are processed into smaller text chunks using relevant packages like PyMuPDFLoader. These chunks are embedded using Ollama Embedding Function and stored in a chromadb vector collection for efficient retrieval. Metadata and document chunks are added to the vector store, and users receive confirmation once the data is successfully stored. When a user submits a question, the system queries the vector database for relevant chunks, and generates a detailed, structured answer with Ollama’s chat model. This ensures clarity and completeness based on the retrieved content.
 
 # Ollama Set up
-See the instructions here: https://github.com/ollama/ollama .
+See the instructions [here](https://github.com/ollama/ollama).
 In my experience, the RAG pipeline works better on Mac (vs Windows) because of its OS' capabilities to optimize the system architecture and memory management.
 If you're using Windows, you may want to consider going via the Linux/Ubuntu route of OS.
 
