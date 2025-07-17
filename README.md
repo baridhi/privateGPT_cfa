@@ -1,5 +1,5 @@
 # Private GPT
-Create a private GPT that can be used to process and interact with documents locally.
+Create a private GPT that can be used to process and interact with documents locally. It is described in this [CFA Institute blog here] (https://blogs.cfainstitute.org/investor/2025/07/14/rethinking-research-private-gpts-for-investment-analysis/).
 
 
 This project aims to create a private version of a GPT to chat with PDF documents.
